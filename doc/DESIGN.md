@@ -2,7 +2,7 @@
 
 ###Model
 
-####Task Data Structure
+####TaskNode - Task Data Structure
 - Data
   - Data Fields
     - taskIdNo - Task Identification Number - Long Integer, unique
@@ -26,7 +26,8 @@
 
 - Data
   - Data Fields
-    - root - Root Level Task Data Struct - TaskObj
+    - root - Root Level Task Data Struct - TaskNode
+      - The node to which all tasks without parents are attached
     - taskList - Complete List of Tasks, Sans root - Collection of TaskObj References
-    - 
+      - length
   - Meta Data
