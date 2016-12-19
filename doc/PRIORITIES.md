@@ -8,6 +8,8 @@
 
 ##Current Round Priorities
 
+###Round 1
+
 - TaskNode class definition
 - TaskGraph class definition
 - UserSettings class definition
