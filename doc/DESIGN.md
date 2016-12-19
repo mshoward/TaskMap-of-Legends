@@ -1,8 +1,19 @@
 #Design
 
-###Model
+##Contents
 
-####TaskNode - Task Data Structure
+1. Data
+2. UI Screens
+3. Interfaces
+4. Navigation
+5. Future Considerations
+
+
+##1 - Data
+
+###1.1 - Task Model
+
+####1.1.1 - TaskNode - Task Data Structure
 - Data
   - Data Fields
     - taskIdNo - Task Identification Number - Long Integer, unique
@@ -22,7 +33,7 @@
     - fieldTypes - Field Data Types - String[]
     - todo - cont.
 
-####TaskGraph
+####1.1.2 - TaskGraph
 
 - Data
   - Data Fields
@@ -30,4 +41,34 @@
       - The node to which all tasks without parents are attached
     - taskList - Complete List of Tasks, Sans root - Collection of TaskObj References
       - length
+    - name - String
+    - TaskGraphIdNo - Long Integer
   - Meta Data
+
+###1.2 - UI Model
+
+####1.2.1 - Generic List Item Display View
+
+- Heading
+- Optional 1
+- Body
+- Optional 2
+- Footer
+
+####1.2.2 - Generic TaskGraph Navigator
+
+- implements iGraphNavigator
+- Current Node Reference
+- Previous Node Reference
+- Next Node References
+- TaskGraph object reference
+- Navigation Functions
+  - next(), next(index), next(which)
+  - prev()
+  - horz(index), horz(which)
+  - changeRoot(newRoot)
+
+####1.2.3 - Generic Graph Position Display View
+
+- iGraphNavigator navObj
+- iListItemFactory listItemFactoryObj
