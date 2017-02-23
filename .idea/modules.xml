@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TaskMap-of-Legends.iml" filepath="$PROJECT_DIR$/TaskMap-of-Legends.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plethora/plethora.iml" filepath="$PROJECT_DIR$/plethora/plethora.iml" />
     </modules>
   </component>
 </project>
